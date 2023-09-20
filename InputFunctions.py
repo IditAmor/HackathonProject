@@ -21,7 +21,7 @@ def user_interest():
 def user_city():
     print("באיזה עיר אתה רוצה להתנדב?")
     user_input = input()
-    return user_city()
+    return user_input
 
 
 # from ip2geotools.databases.noncommercial import DbIpCity
