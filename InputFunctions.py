@@ -18,10 +18,10 @@ def user_interest():
     print(user_interest_list)
 
 
-
 def user_city():
     print("באיזה עיר אתה רוצה להתנדב?")
     user_input = input()
+    return user_city()
 
 
 # from ip2geotools.databases.noncommercial import DbIpCity
@@ -29,4 +29,4 @@ def user_city():
 # hostname = socket.gethostname()
 # ip = socket.gethostbyname(hostname)
 # res = DbIpCity.get(ip, api_key="free")
-# print(f"Location: {res.city}, {res.region}, {res.country}")
+# print(f"Location: {res.city}, {res.region}, {res.country}")ר שאתה מצא בה או בעיר אחרת? (ענה כן או לא)")
