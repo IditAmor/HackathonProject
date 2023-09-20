@@ -3,26 +3,21 @@ field_of_volunteering = ["אוכלוסיות חלשות", "בעלי מוגבלו
 
 
 def user_interest():
-    print("רשום את התחום בו תרצה להתנדב מהרשימה הבאה: "
-          "בעלי חיים, קשישים, אנשים חולים, בעלי מוגבלות ואוכלוסיות חלשות")
-    print("אם סיימת תכתוב סוף")
-    user_input = input()
+    user_input = input("רשום את התחום בו תרצה להתנדב מהרשימה הבאה: "
+                       "בעלי חיים, קשישים, אנשים חולים, בעלי מוגבלות ואוכלוסיות חלשות. \n אם סיימת הכנס 'סוף' : ")
     while user_input != "סוף":
         if user_input not in field_of_volunteering:
             print("תחום ההתנדבות חייב להיות "
                   "בעלי חיים, קשישים, אנשים חולים, בעלי מוגבלות ואוכלוסיות חלשות")
-            user_input = input()
+            user_input = input("הכנס תחום התנדבות חדש: ")
         else:
             user_interest_list.append(user_input)
-            user_input = input()
-    print(user_interest_list)
+            user_input = input(" הכנס תחום התנדבות נוסף או 'סוף' :")
 
 
 def user_city():
-    print("באיזה עיר אתה רוצה להתנדב?")
-    user_input = input()
+    user_input = input("באיזה עיר אתה רוצה להתנדב? ")
     return user_input
-
 
 # from ip2geotools.databases.noncommercial import DbIpCity
 # import socket
