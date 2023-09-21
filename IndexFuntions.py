@@ -16,4 +16,4 @@ def find_associations_by_city():
                 existing_cities_of_associations.append(association_name)
                 print(association_name, association_contact_details)
         if len(existing_cities_of_associations) == 0:
-            print("לא נמצאה עמותה בעיר זו לפי תחום ההתנדבות זה.")
+            print("לא נמצא עמותות בעיר זו.")
